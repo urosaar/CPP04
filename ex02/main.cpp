@@ -4,8 +4,6 @@
 
 int main()
 {
-    Animal a;
-    Animal* b = new Animal();
     const int n = 4;
     Animal* animals[n];
     
@@ -15,7 +13,6 @@ int main()
         animals[i] = new Cat();
     for (int i = 0; i < n; i++)
         animals[i]->makeSound();
-    delete b;
     for (int i = 0; i < n; i++)
         delete animals[i];
 
